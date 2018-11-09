@@ -7,3 +7,5 @@ More tests
 Branch test1
 
 There is something new here from branch test1
+
+Let's add more stuff here.
