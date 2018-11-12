@@ -11,3 +11,4 @@ There is something new here from branch test1
 Let's add more stuff here.
 
 Add something from test3 branch
+Make some changes on master
