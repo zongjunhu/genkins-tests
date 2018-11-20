@@ -26,6 +26,7 @@ how about more lines in test3
 
 no, I need this as well
 
+<<<<<<< HEAD
 there is conflict, but fixed
 
 I do not care
@@ -33,3 +34,7 @@ I do not care
 now I am a brand new test4
 
 Now got a new branch 5, but the change is here
+
+now I am a brand new test4
+
+I do not care
