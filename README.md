@@ -1,8 +1,12 @@
+add first line
+
 This is is test place for genkins tests.
 
 Test branch test3 from master
 
 More tests
+
+Add 4th line
 
 Branch test1
 
@@ -25,3 +29,5 @@ how about more lines in test3
 no, I need this as well
 
 now I am a brand new test4
+
+I do not care
