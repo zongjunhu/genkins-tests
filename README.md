@@ -4,6 +4,8 @@ Test branch test3 from master
 
 More tests
 
+Add 4th line
+
 Branch test1
 
 There is something new here from branch test1
