@@ -23,3 +23,5 @@ add more from master
 how about more lines in test3
 
 no, I need this as well
+
+I do not care
