@@ -28,4 +28,7 @@ how about more lines in test3
 
 no, I need this as well
 
+there is conflict, but fixed
+
 I do not care
+now I am a brand new test4
