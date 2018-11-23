@@ -5,7 +5,6 @@ node {
   }
   stage("build"){
  	'mvn package'
- 	junit '**/target/surefire-reports/TEST-*.xml'
-  }
+   }
 
 }
