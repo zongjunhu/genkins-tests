@@ -23,11 +23,12 @@ add more from master
 
 how about more lines in test3
 
+<<<<<<< HEAD
 confused
 
 Add something from test3 branch
 add more from master
-
+=======
 no, I need this as well
 
 there is conflict, but fixed
@@ -41,3 +42,4 @@ Now got a new branch 5, but the change is here
 now I am a brand new test4
 
 I do not care
+>>>>>>> refs/remotes/origin/master
