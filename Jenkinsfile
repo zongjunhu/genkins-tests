@@ -11,5 +11,9 @@ node {
   	echo "${BUILD_NUMBER}"
   	sh 'ls -l'
    }
+   stage("report"){
+       junit '**/target/surefire-reports/TEST-*.xml'
+   }
+
 
 }
