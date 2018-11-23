@@ -5,7 +5,7 @@ node {
   }
   stage("build"){
   	'mvn clean verify -DskipITs=true'
-  	junit '**/target/surefire-reports/TEST-*.xml'
+  	echo ${BUILD_NUMBER}
    }
 
 }
