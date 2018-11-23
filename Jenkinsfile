@@ -4,7 +4,8 @@ node {
   	checkout scm
   }
   stage("build"){
- 	'mvn package'
+  	sh 'mvn clean verify -DskipITs=true'
+  	junit '**/target/surefire-reports/TEST-*.xml'
    }
 
 }
