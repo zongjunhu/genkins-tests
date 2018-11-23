@@ -4,6 +4,8 @@ Test branch test3 from master
 
 More tests
 
+Add 4th line
+
 Branch test1
 
 There is something new here from branch test1
@@ -25,3 +27,17 @@ confused
 
 Add something from test3 branch
 add more from master
+
+no, I need this as well
+
+there is conflict, but fixed
+
+I do not care
+
+now I am a brand new test4
+
+Now got a new branch 5, but the change is here
+
+now I am a brand new test4
+
+I do not care
