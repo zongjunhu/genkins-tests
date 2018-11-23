@@ -6,6 +6,7 @@ node {
   stage("build"){
   	'mvn clean verify -DskipITs=true'
   	echo "${BUILD_NUMBER}"
+  	sh 'ls -l'
    }
 
 }
