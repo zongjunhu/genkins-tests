@@ -1,10 +1,12 @@
 node {
   
+  
   stage("Pull"){
   	checkout scm
   }
   stage("build"){
-  	'mvn clean verify -DskipITs=true'
+	def mvnHome = tool 'M3'
+  	sh '${mvnHome}/bin/mvn clean verify -DskipITs=true'
   	echo "${BUILD_NUMBER}"
   	sh 'ls -l'
    }
