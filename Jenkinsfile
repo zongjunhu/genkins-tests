@@ -1,23 +1,36 @@
-node {
+pipeline {
   
-  
-  stage("Pull"){
-  	checkout scm
+  agent any
+
+  tools {
+      maven 'M3'
   }
-  stage("build"){
-	def mvnHome = tool 'M3'
-	echo "${mvnHome}"
-  	sh "${mvnHome}/bin/mvn clean verify -DskipITs=true"
-  	echo "${BUILD_NUMBER}"
-  	sh 'ls -l'
-   }
-   stage("report"){
-       junit '**/target/surefire-reports/TEST-*.xml'
-   }
-   stage("archive"){
-       archive 'target/*.war'
-   }
 
+  stages {
+  
+      stage("Pull"){
+          steps {
+            checkout scm
+          }
+      }
 
+      stage("build"){
+          steps {
+            sh "mvn clean verify -DskipITs=true"
+            echo "${BUILD_NUMBER}"
+            sh 'ls -l'
+          }
+       }
+       stage("report"){
+          steps {
+           junit '**/target/surefire-reports/TEST-*.xml'
+          }
+       }
+       stage("archive"){
+          steps {
+           archive 'target/*.war'
+          }
+       }
+    }
 
 }
