@@ -16,7 +16,7 @@ pipeline {
 
       stage("build"){
           steps {
-            maven "clean verify -DskipITs=true"
+            sh "mvn clean verify -DskipITs=true"
             echo "${BUILD_NUMBER}"
             sh 'ls -l'
           }
